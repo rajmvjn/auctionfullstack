@@ -5,7 +5,10 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
-    "server": "nodemon server"
+    "server": "nodemon server",
+    "feclient": "npm start --prefix ../fe/auction-fe",
+    "dev": "concurrently \"npm run server\" \"npm run feclient\""
+
   },
   "author": "rajmvjn",
   "license": "MIT",
